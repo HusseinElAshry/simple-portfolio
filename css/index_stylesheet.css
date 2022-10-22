@@ -1,0 +1,137 @@
+html
+{
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: font1;
+    src: url(../Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+.home
+{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) , url(../img/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ffam1
+{
+    font-family:font1 ;
+}
+#home .icons a 
+{
+    width: 35px;
+    height: 35px;
+}
+#home .animatedp p::after
+{
+    content: "";
+    animation: typing 3s ease-in-out 1s infinite forwards ;
+
+}
+#about  .cvbtn:hover ,#contact .cvbtn:hover
+{
+    background-color: white !important;
+    color: black !important;
+}
+#about  .cmbtn:hover
+{
+    background-color: black !important;
+    color: white !important;
+}
+#services .icon , #contact .icon
+{ 
+    width: 60px;
+    height: 60px;
+}
+#works .icon , #contact .icon
+{
+    width: 45px;
+    height: 45px;
+}
+.icon:hover
+{
+    background: #000!important;
+    color: white;
+}
+h2 span::after
+{
+        content: '';
+        width: 100%;
+        height: 30px;
+        background-image: url(../img/dots.png);
+        background-repeat: repeat;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        z-index: -1;
+}
+#works .father:hover .floatingDiv
+{
+    top: 2.5%;
+}
+.floatingDiv
+{
+    width: 95%;
+    height: 95%;
+    left: 2.5%;
+    top:102.5%;
+    background-color:rgba(255,255,255,0.6);
+    transition: all 1s 0.25s ease-in-out;
+}
+.carcont
+{
+    width: 20px!important;
+    height: 20px!important;
+}
+#blog img:hover
+{
+    transform: scale(1.2,1.2);
+}
+#blog img
+{
+    transition: all 2s 0.5s ease-in-out;
+}
+.zindex
+{
+    z-index: 4;
+}
+.navzindex
+{
+    z-index: 1000000;
+}
+.popUp
+{
+    width:100%;
+    height: 100%;
+}
+.fa-xmark
+{
+    top: -30px;
+    right: 0;
+}
+.allCards
+{
+    transition: all 1000ms ;
+}
+
+@keyframes typing
+{
+    0%{content:"" ;}
+    12.5%{content:"Larry Daniels" ;}
+    37.5%{content:"" ;}
+    50%{content:"Developer" ;}
+    75%{content:"" ;}
+    87.5%{content:"Designer" ;}
+}
+@media screen and (max-width :768px) {
+    .allCards
+    {
+        display: block!important;
+    }
+    .contBtn
+    {
+        display: none;
+    }
+    
+}
